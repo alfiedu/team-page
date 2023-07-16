@@ -102,6 +102,8 @@ header .description p {
 .our-teams .profile-card-container .profile-card .profesi {
   writing-mode: vertical-rl;
   font-size: 14px;
+  font-family: var(--ptSerif);
+  font-weight: 400;
 }
 
 footer {
