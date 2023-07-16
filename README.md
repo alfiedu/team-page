@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="   ">
+    <a href="https://teampage-alfi.netlify.app/">
       Solution
     </a>
     <span> | </span>
