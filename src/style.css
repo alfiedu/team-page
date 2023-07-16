@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+  --poppins: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%; height: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 7.35rem;
+  padding: 2.5rem 0;
+}
+
+header .description h3 {
+  margin-bottom: 0.75rem;
+  display: flex; 
+  align-items: center;
+  gap: 0.75rem;
+}
+
+header .description h3 span {
+  display: inline-block;
+  width: 28px;
+  height: 3px;
+  background: #000;
+}
+  
+header .description p {
+  line-height: 1.3rem;
+}
+/* Header end */
+
+.our-teams {
+  width: 100%; height: fit-content;
+}
+
+.our-teams .profile-card-container {
+ width: 40rem; height: fit-content;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+  row-gap: 5rem;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+
+
+.our-teams .profile-card-container .profile-card {
+  width: 200px; height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 9%;
+  grid-template-rows: 1fr 10%;
+  column-gap: 0.3rem;
+  row-gap: 0.75rem;
+
+}
+
+
+
+.our-teams .profile-card-container .profile-card:nth-child(2), 
+.our-teams .profile-card-container .profile-card:nth-child(5) {
+  margin-top: 4rem;
+}
+
+.our-teams .profile-card-container .profile-card .image-container {
+  width: 100%; height: 100%;
+  background: yellow;
+}
+
+.our-teams .profile-card-container .profile-card .image-container img {
+  object-fit: cover;
+  width: 100%; height: 100%;
+}
+
+.our-teams .profile-card-container .profile-card .name {
+  font-family: var(--poppins);
+  font-size: 14px;
+}
+
+.our-teams .profile-card-container .profile-card .profesi {
+  writing-mode: vertical-rl;
+  font-size: 14px;
+}
+
+
+
+@media (max-width: 678px) {
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.4rem;
+    padding: 1.5rem 0.875rem;
+  }
+  
+  .our-teams {
+    width: 100%; 
+  }
+  
+  .our-teams .profile-card-container {
+    width: 100%; height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2.5rem 0.875rem;
+    row-gap: 0;
+  }
+  
+  .our-teams .profile-card-container .profile-card {
+    width: 150px; opacity: 0;
+  }
+  
+  .our-teams .profile-card-container .profile-card.fade-in {
+     -webkit-animation: fade-in-bck 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	           animation: fade-in-bck 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  .our-teams .profile-card-container .profile-card.fade-out {
+     -webkit-animation: fade-out-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	           animation: fade-out-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  
+  @-webkit-keyframes fade-in-bck {
+    0% {
+      -webkit-transform: translateZ(80px);
+              transform: translateZ(80px);
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-bck {
+    0% {
+      -webkit-transform: translateZ(80px);
+              transform: translateZ(80px);
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes fade-out-bck {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+  }
+ @keyframes fade-out-bck {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+}
+  
+
+  
+  
+  .our-teams .profile-card-container .profile-card:nth-child(2) {
+      margin-top: 4.5rem;
+      margin-left: 1rem;
+  }
+  
+  .our-teams .profile-card-container .profile-card:nth-child(4) {
+      margin-top: 4.3rem;
+      margin-left: 1rem;
+     
+  }
+ 
+  .our-teams .profile-card-container .profile-card:nth-child(6) {
+    margin-top: 8rem;
+      margin-left: 1rem;
+  }
+  
+}
