@@ -55,5 +55,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 
 ## Contact
-- GitHub [@alfiedi](https://github.com/alfiedu)
+- GitHub [@alfiedu](https://github.com/alfiedu)
 
