@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="   ">
+    <a href="https://teampage-alfi.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://teampage-alfi.netlify.app/">
+    <a href="  ">
       Solution
     </a>
     <span> | </span>
